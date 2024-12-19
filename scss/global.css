@@ -139,7 +139,7 @@ a {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -164,15 +164,15 @@ header li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
   gap: 40px;
 }
 header a {
   color: white;
   -webkit-font-feature-settings: "liga" off, "clig" off;
-  font-feature-settings: "liga" off, "clig" off;
+          font-feature-settings: "liga" off, "clig" off;
   font-family: Rockwell;
   font-size: 20px;
   font-style: normal;
@@ -189,6 +189,17 @@ body {
   max-width: 1250px;
   max-height: 715px;
 }
+.s1 h5 {
+  color: white;
+  font-family: "Rockwell Extra Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 70px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
 .s1 h1 {
   color: white;
   font-family: "Rockwell Extra Bold";
@@ -197,7 +208,6 @@ body {
   font-weight: 800;
   line-height: normal;
   margin-left: 70px;
-  margin-top: 100px;
   margin-bottom: 10px;
 }
 .s1 h6 {
@@ -220,11 +230,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 70px;
 }
 .s1 .button h2 {
@@ -246,4 +256,85 @@ body {
 }
 .s1 .button:hover h2 {
   color: black;
-} /*# sourceMappingURL=global.css.map */
+}
+
+.games h2 {
+  color: white;
+  font-family: "Rockwell Extra Bold";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 150px;
+}
+.games .tamashebi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+}
+.games .box1 {
+  background-image: url(https://store-images.s-microsoft.com/image/apps.34695.13738414994700897.d5f58586-d72e-41d4-84db-1e7957867558.fea84892-88a9-44cf-98d3-07bda55b2444);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  margin-top: 70px;
+  width: 300px;
+  height: 450px;
+}
+.games .box1:hover {
+  width: 320px;
+  border-radius: 5%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.games .box2 {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMTZlMmIxM2EtN2Y4Zi00M2ZhLTk3NzgtNjJmZTU0MTQ3YjcwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  margin-top: 70px;
+  width: 300px;
+  height: 450px;
+}
+.games .box2:hover {
+  width: 320px;
+  border-radius: 5%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.games .box3 {
+  background-image: url(https://a.allegroimg.com/s512/11453a/9161ee7b4ef6be372696ef2a5644/Grand-Theft-Auto-V-GTA-5-Edycja-Premium-Polska-Wersja-PC-KLUCZ);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  margin-top: 70px;
+  width: 300px;
+  height: 450px;
+}
+.games .box3:hover {
+  width: 320px;
+  border-radius: 5%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.games .box4 {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BNjJiNTFhY2QtNzZkYi00MDNiLWEzNGEtNWE1NzBkOWIxNmY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  margin-top: 70px;
+  width: 300px;
+  height: 450px;
+}
+.games .box4:hover {
+  width: 320px;
+  border-radius: 5%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.container1 {
+  width: 1600px;
+  margin: 0 auto;
+}/*# sourceMappingURL=global.css.map */
