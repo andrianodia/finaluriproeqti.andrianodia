@@ -9,12 +9,35 @@ html {
 }
 
 header {
-  background-color: black;
+  background-color: var(--base-colour);
   border-bottom: 1px solid rgb(88, 88, 88);
+  border-width: 100%;
   max-width: 100%;
   width: 100%;
   height: 85px;
 
+  #theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #theme-switch svg {
+    fill: var(--primary-color);
+  }
+  #theme-switch svg:last-child {
+    display: none;
+  }
+  .darkmode #theme-switch svg:first-child {
+    display: none;
+  }
+  .darkmode #theme-switch svg:last-child {
+    display: block;
+  }
   .logo {
     width: 80px;
     height: 80px;
@@ -27,7 +50,7 @@ header {
     gap: 40px;
   }
   a {
-    color: white;
+    color: var(--text-colour);
     font-feature-settings: "liga" off, "clig" off;
     font-family: Rockwell;
     font-size: 20px;
@@ -39,7 +62,7 @@ header {
 }
 
 body {
-  background-color: black;
+  background-color: var(--base-colour);
 }
 
 .s1 {
@@ -48,7 +71,7 @@ body {
     max-height: 715px;
   }
   h5 {
-    color: white;
+    color: var(--text-colour);
     font-family: "Rockwell Extra Bold";
     font-size: 40px;
     font-style: normal;
@@ -59,7 +82,7 @@ body {
     margin-bottom: 20px;
   }
   h1 {
-    color: white;
+    color: var(--text-colour);
     font-family: "Rockwell Extra Bold";
     font-size: 20px;
     font-style: normal;
@@ -69,7 +92,7 @@ body {
     margin-bottom: 10px;
   }
   h6 {
-    color: white;
+    color: var(--text-colour);
     font-family: "Rockwell Extra Bold";
     font-size: 48px;
     font-style: normal;
@@ -79,8 +102,8 @@ body {
     margin-bottom: 40px;
   }
   .button {
-    background-color: black;
-    border: 1px solid white;
+    background-color: var(--base-colour);
+    border: 1px solid var(--text-colour);
     width: 300px;
     height: 75px;
     border-radius: 7px;
@@ -89,7 +112,7 @@ body {
     justify-content: center;
     margin-left: 70px;
     h2 {
-      color: white;
+      color: var(--text-colour);
       font-family: "Rockwell Extra Bold";
       font-size: 20px;
       font-style: normal;
@@ -103,7 +126,7 @@ body {
   .button:hover {
     background-color: orange;
     h2 {
-      color: black;
+      color: var(--text-colour);
     }
     border: none;
   }
@@ -111,7 +134,7 @@ body {
 
 .games {
   h2 {
-    color: white;
+    color: var(--text-colour);
     font-family: "Rockwell Extra Bold";
     font-size: 48px;
     font-style: normal;
@@ -121,6 +144,13 @@ body {
   }
   .tamashebi {
     display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+  }
+  .yutebi1,
+  .yutebi2 {
+    display: flex;
+    flex-direction: row;
     gap: 120px;
   }
   .box1 {
@@ -185,4 +215,41 @@ body {
 .container1 {
   width: 1600px;
   margin: 0 auto;
+}
+
+@media (max-width: 1800px) {
+  header {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1620px) {
+  .games {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .s1 {
+    img {
+      max-width: 1050px;
+      max-height: 515px;
+    }
+  }
+  .games {
+    width: 1600px;
+    h2 {
+      margin-top: 150px;
+    }
+    .tamashebi {
+      flex-direction: row;
+      row-gap: 20px;
+    }
+    .yutebi1,
+    .yutebi2 {
+      flex-wrap: wrap;
+      flex: 1 1 100%;
+      gap: 100px;
+    }
+  }
 }
