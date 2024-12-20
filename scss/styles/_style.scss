@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1800px;
   width: 1800px;
@@ -9,7 +13,7 @@ header {
   border-bottom: 1px solid rgb(88, 88, 88);
   max-width: 100%;
   width: 100%;
-  height: 100px;
+  height: 85px;
 
   .logo {
     width: 80px;
@@ -134,7 +138,7 @@ body {
     transition: width 0.5s;
   }
   .box2 {
-    background-image: url(https://m.media-amazon.com/images/M/MV5BMTZlMmIxM2EtN2Y4Zi00M2ZhLTk3NzgtNjJmZTU0MTQ3YjcwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/60eca3ac155247e21850c7d075d01ebf0f3f5dbf19ccd2a1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5%;
@@ -148,7 +152,7 @@ body {
     transition: width 0.5s;
   }
   .box3 {
-    background-image: url(https://a.allegroimg.com/s512/11453a/9161ee7b4ef6be372696ef2a5644/Grand-Theft-Auto-V-GTA-5-Edycja-Premium-Polska-Wersja-PC-KLUCZ);
+    background-image: url(https://i5.walmartimages.com/seo/The-Last-Of-Us-Gaming-Poster-Print-Key-Art-Game-Cover-24-X-36_7b6cad54-1f38-4679-b595-670c20c5cad6.05372cc22265ec7cd206e0643215c8dc.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5%;
@@ -175,6 +179,7 @@ body {
     border-radius: 5%;
     transition: width 0.5s;
   }
+  margin-bottom: 100px;
 }
 
 .container1 {
