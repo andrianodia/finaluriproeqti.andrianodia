@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --base-colour: white;
+  --base-variant: white;
+  --text-colour: black;
+  --base-variant: #e8e9ed;
+  --primary-colour: #3a435d;
+}
+
+.darkmode {
+  --base-colour: black;
+  --base-variant: black;
+  --text-colour: white;
+  --base-variant: #e8e9ed;
+  --primary-colour: #3a435d;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--base-colour);
+  border-bottom: 1px solid rgb(88, 88, 88);
+  border-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 85px;
+}
+header #theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header #theme-switch svg {
+  fill: var(--primary-color);
+}
+header #theme-switch svg:last-child {
+  display: none;
+}
+header .darkmode #theme-switch svg:first-child {
+  display: none;
+}
+header .darkmode #theme-switch svg:last-child {
+  display: block;
+}
+header .logo {
+  width: 80px;
+  height: 80px;
+}
+header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  gap: 40px;
+}
+header a {
+  color: var(--text-colour);
+  -webkit-font-feature-settings: "liga" off, "clig" off;
+          font-feature-settings: "liga" off, "clig" off;
+  font-family: Rockwell;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+body {
+  background-color: var(--base-colour);
+}
+
+@media (max-width: 1800px) {
+  header {
+    margin-left: 50px;
+  }
+}
+.s1 {
+  background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202011/1215/WyHa1BM3ISDVqYSEUMB9VZJs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1980px;
+  width: 100%;
+  height: 800px;
+}
+.s1 div img {
+  padding-top: 150px;
+  padding-left: 100px;
+}
+
+.s2 .div1 {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 850px;
+}
+.s2 .div1 p {
+  color: var(--text-colour);
+  -webkit-font-feature-settings: "liga" off, "clig" off;
+          font-feature-settings: "liga" off, "clig" off;
+  font-family: Rockwell;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.s2 .button {
+  background-color: var(--base-colour);
+  border: 1px solid var(--text-colour);
+  width: 300px;
+  height: 75px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.s2 .button h2 {
+  color: var(--text-colour);
+  font-family: "Rockwell Extra Bold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.s2 .button:hover {
+  background-color: orange;
+}/*# sourceMappingURL=rdr.css.map */
